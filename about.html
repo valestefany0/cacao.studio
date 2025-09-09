@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Valeria Ocaña | Digital Marketing Strategist</title>
+    <meta name="description" content="From Ecuador to the World, Guided by Purpose. Learn about Valeria's journey from triathlete to digital marketing strategist helping conscious entrepreneurs.">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="About - Valeria Ocaña | Digital Marketing Strategist">
+    <meta property="og:description" content="From Ecuador to the World, Guided by Purpose. Learn about Valeria's journey from triathlete to digital marketing strategist helping conscious entrepreneurs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeriaocana.com/about">
+    <meta property="og:image" content="https://valeriaocana.com/images/og-about.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['DM Serif Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'pastel-pink': '#F8E8E8',
+                        'pastel-mint': '#E8F5F0',
+                        'pastel-blue': '#E8F2FF',
+                        'pastel-beige': '#F5F1E8',
+                        'soft-pink': '#F4C2C2',
+                        'soft-mint': '#B8E6D1',
+                        'soft-blue': '#B8D4F0',
+                        'warm-beige': '#E8DCC0',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-pastel-pink/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-serif text-gray-800">Valeria Ocaña</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="about.html" class="text-gray-900 px-3 py-2 text-sm font-medium border-b-2 border-soft-pink">About</a>
+                        <a href="professional-profile.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Profile</a>
+                        <a href="services.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#contact" class="bg-soft-pink text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-pastel-pink/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-900 block px-3 py-2 text-base font-medium border-b-2 border-soft-pink">About</a>
+                <a href="professional-profile.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Profile</a>
+                <a href="services.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
+                <a href="#contact" class="bg-soft-pink text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-pastel-mint via-pastel-beige to-pastel-pink relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-gray-800 mb-6 leading-tight">
+                    From Ecuador to the World,<br>
+                    <span class="text-soft-mint">Guided by Purpose</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+                    My journey from triathlete discipline to digital marketing strategist, helping conscious entrepreneurs build authentic brands.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-8 text-center">
+                        The Story Behind the Strategy
+                    </h2>
+                    
+                    <div class="space-y-8 text-lg text-gray-600 leading-relaxed">
+                        <p>
+                            Born and raised in Ecuador, I discovered early on that discipline and determination could take you anywhere. As a competitive triathlete, I learned that success isn't just about talent—it's about showing up consistently, pushing through challenges, and staying true to your goals even when the path gets difficult.
+                        </p>
+                        
+                        <p>
+                            When my family's business collapsed during my teenage years, I experienced firsthand how quickly life can change. But instead of breaking me, this challenge taught me resilience and the importance of building something meaningful from the ground up. It's this experience that drives my passion for helping entrepreneurs create sustainable, purpose-driven businesses.
+                        </p>
+                        
+                        <p>
+                            My international career began with managing over 500 YouTube channels, where I learned that authentic storytelling and strategic thinking could create incredible impact. From launching campaigns for global brands like Estee Lauder and Aveda to working with creators across Latin America, I've seen how powerful marketing can be when it's rooted in genuine purpose.
+                        </p>
+                        
+                        <p>
+                            Now based in Lisbon, Portugal, I work with conscious entrepreneurs who want to grow their brands without compromising their values. My approach combines data-driven strategy with human-centered storytelling, ensuring that every campaign not only drives results but also creates meaningful connections with your audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beliefs Section -->
+    <section class="py-20 bg-gradient-to-br from-pastel-blue to-pastel-mint">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    What I Believe
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The principles that guide my work and shape my approach to marketing
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Belief 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🌱</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Conscious Business</h3>
+                    <p class="text-gray-600">
+                        True success comes from aligning your business with your values. Every marketing decision should reflect your mission and create positive impact in the world.
+                    </p>
+                </div>
+
+                <!-- Belief 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-soft-mint rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Strategy with Impact</h3>
+                    <p class="text-gray-600">
+                        Data tells a story, but human connection drives action. The best strategies combine analytics with authentic storytelling to create meaningful results.
+                    </p>
+                </div>
+
+                <!-- Belief 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-soft-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Human-Centered Marketing</h3>
+                    <p class="text-gray-600">
+                        Behind every click, like, and purchase is a real person. Marketing should build bridges, not barriers, creating genuine connections that last.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                        My Values in Action
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-soft-pink rounded-full flex items-center justify-center mr-4 mt-1">
+                                <span class="text-white text-sm">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Authenticity First</h3>
+                                <p class="text-gray-600">Your brand should reflect who you truly are, not who you think you should be.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-soft-mint rounded-full flex items-center justify-center mr-4 mt-1">
+                                <span class="text-white text-sm">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Sustainable Growth</h3>
+                                <p class="text-gray-600">Building lasting success requires patience, strategy, and genuine value creation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-soft-blue rounded-full flex items-center justify-center mr-4 mt-1">
+                                <span class="text-white text-sm">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Community Impact</h3>
+                                <p class="text-gray-600">Every business decision should consider its impact on people and the planet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-pastel-pink to-pastel-mint rounded-3xl p-8 h-96 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-soft-pink rounded-full mx-auto mb-6 flex items-center justify-center">
+                                <span class="text-4xl">💫</span>
+                            </div>
+                            <p class="text-gray-600 italic">"Purpose-driven marketing creates lasting impact"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-pastel-beige to-pastel-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                Let's Talk About Your Vision
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Ready to build a brand that reflects your values and drives meaningful growth?
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://calendly.com/valeriaocana" target="_blank" class="bg-soft-pink text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink/90 transition-all duration-300 transform hover:scale-105">
+                    Let's Talk
+                </a>
+                <a href="services.html" class="border-2 border-soft-pink text-soft-pink px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink hover:text-white transition-all duration-300">
+                    View My Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-serif mb-4">Valeria Ocaña</h3>
+                <p class="text-gray-400 mb-6">Digital Marketing Strategist</p>
+                <p class="text-gray-500 text-sm">
+                    © 2024 Valeria Ocaña. All rights reserved. | Based in Lisbon, Portugal
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

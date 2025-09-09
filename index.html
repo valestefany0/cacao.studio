@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Ocaña - Digital Marketing Strategist</title>
+    <meta name="description" content="Marketing with Purpose. Growth with Soul. I help conscious entrepreneurs grow their personal brand, align with their mission, and take action — online and offline.">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Valeria Ocaña - Digital Marketing Strategist">
+    <meta property="og:description" content="Marketing with Purpose. Growth with Soul. I help conscious entrepreneurs grow their personal brand, align with their mission, and take action — online and offline.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeriaocana.com">
+    <meta property="og:image" content="https://valeriaocana.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Valeria Ocaña - Digital Marketing Strategist">
+    <meta name="twitter:description" content="Marketing with Purpose. Growth with Soul. I help conscious entrepreneurs grow their personal brand, align with their mission, and take action — online and offline.">
+    <meta name="twitter:image" content="https://valeriaocana.com/images/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['DM Serif Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'pastel-pink': '#F8E8E8',
+                        'pastel-mint': '#E8F5F0',
+                        'pastel-blue': '#E8F2FF',
+                        'pastel-beige': '#F5F1E8',
+                        'soft-pink': '#F4C2C2',
+                        'soft-mint': '#B8E6D1',
+                        'soft-blue': '#B8D4F0',
+                        'warm-beige': '#E8DCC0',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-pastel-pink/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-serif text-gray-800">Valeria Ocaña</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="about.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="professional-profile.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Profile</a>
+                        <a href="services.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#contact" class="bg-soft-pink text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-pastel-pink/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">About</a>
+                <a href="professional-profile.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Profile</a>
+                <a href="services.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
+                <a href="#contact" class="bg-soft-pink text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-pastel-pink via-pastel-beige to-pastel-mint relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-gray-800 mb-6 leading-tight">
+                    Marketing with Purpose.<br>
+                    <span class="text-soft-pink">Growth with Soul.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+                    I help conscious entrepreneurs grow their personal brand, align with their mission, and take action — online and offline.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://calendly.com/valeriaocana" target="_blank" class="bg-soft-pink text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink/90 transition-all duration-300 transform hover:scale-105">
+                        Book a Discovery Call
+                    </a>
+                    <a href="#services" class="border-2 border-soft-pink text-soft-pink px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink hover:text-white transition-all duration-300">
+                        Let's Work Together
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                        From Ecuador to the World,<br>
+                        <span class="text-soft-mint">Guided by Purpose</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Born in Ecuador, I discovered my discipline through triathlon training and learned resilience when my family's business collapsed. Now based in Lisbon, I help founders align their message with their mission, creating authentic connections that drive growth.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        My journey taught me that the most powerful marketing comes from understanding your story, your values, and your impact on the world.
+                    </p>
+                    <a href="about.html" class="inline-flex items-center text-soft-mint hover:text-soft-mint/80 font-medium">
+                        Read my full story
+                        <svg class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-pastel-mint to-pastel-blue rounded-3xl p-8 h-96 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-soft-mint rounded-full mx-auto mb-6 flex items-center justify-center">
+                                <span class="text-4xl">🏃‍♀️</span>
+                            </div>
+                            <p class="text-gray-600 italic">"Every step forward is a choice to grow."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-pastel-blue to-pastel-mint">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    Let's Grow Your Brand —<br>
+                    <span class="text-soft-blue">With Strategy and Soul</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose the path that aligns with your goals and timeline
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">1:1 Strategy Sessions</h3>
+                    <p class="text-gray-600 mb-6">Deep-dive strategy sessions to clarify your brand direction and create actionable growth plans.</p>
+                    <a href="services.html#strategy-sessions" class="text-soft-pink hover:text-soft-pink/80 font-medium">Learn more →</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-soft-mint rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">✍️</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Content & Brand Coaching</h3>
+                    <p class="text-gray-600 mb-6">Ongoing support to develop your voice, create compelling content, and build authentic connections.</p>
+                    <a href="services.html#content-coaching" class="text-soft-mint hover:text-soft-mint/80 font-medium">Learn more →</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-soft-blue rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Growth Plans</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive marketing strategies tailored to your business goals and target audience.</p>
+                    <a href="services.html#growth-plans" class="text-soft-blue hover:text-soft-blue/80 font-medium">Learn more →</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-warm-beige rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Done-for-You Strategy</h3>
+                    <p class="text-gray-600 mb-6">Complete content strategy and execution for busy entrepreneurs who want results without the work.</p>
+                    <a href="services.html#done-for-you" class="text-warm-beige hover:text-warm-beige/80 font-medium">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-serif text-gray-800 mb-4">
+                    Trusted By Leading Brands
+                </h2>
+                <p class="text-gray-600">I've had the privilege of working with incredible organizations worldwide</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center opacity-60">
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">YouTube</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">EnchufeTV</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">2BTUBE</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">Expandia</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">HeyDominik</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">Estee Lauder</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">Aveda</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">Diners Club</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-6 h-20 flex items-center justify-center">
+                        <span class="text-gray-500 font-semibold">Global Youth Coalition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="py-20 bg-gradient-to-br from-pastel-mint to-pastel-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    Why Work With Me?
+                </h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                    More than a marketing brain — I'm a motivator, a guide, and a creative mirror. I've managed 500+ YouTube channels, launched international campaigns, and helped creators and brands unlock their next phase.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    My approach combines data-driven strategy with human-centered storytelling, ensuring your brand not only grows but resonates authentically with your audience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    What Clients Say
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-br from-pastel-pink to-pastel-beige rounded-2xl p-8">
+                    <div class="mb-6">
+                        <svg class="w-8 h-8 text-soft-pink mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <p class="text-lg text-gray-700 mb-6 italic">
+                        "Valeria transformed our brand strategy completely. Her approach to conscious marketing helped us connect with our audience on a deeper level while achieving our growth goals."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-soft-pink rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold">SM</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Sarah Martinez</p>
+                            <p class="text-gray-600">Founder, Conscious Brands</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-br from-pastel-blue to-pastel-mint rounded-2xl p-8">
+                    <div class="mb-6">
+                        <svg class="w-8 h-8 text-soft-blue mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <p class="text-lg text-gray-700 mb-6 italic">
+                        "Working with Valeria was a game-changer. Her strategic thinking and authentic approach helped us build a community that truly believes in our mission."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-soft-blue rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold">AR</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Alex Rodriguez</p>
+                            <p class="text-gray-600">CEO, Sustainable Ventures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-pastel-beige to-pastel-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                Let's Build Your Vision —<br>
+                <span class="text-soft-mint">With Clarity, Confidence, and Care</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Ready to align your brand with your mission and create meaningful growth?
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="https://calendly.com/valeriaocana" target="_blank" class="bg-soft-pink text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink/90 transition-all duration-300 transform hover:scale-105">
+                    Book a Free Discovery Call
+                </a>
+                <a href="mailto:hello@valeriaocana.com" class="border-2 border-soft-pink text-soft-pink px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink hover:text-white transition-all duration-300">
+                    Email Me
+                </a>
+            </div>
+            
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com/valeriaocana" target="_blank" class="text-gray-600 hover:text-soft-pink transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781h-1.594c-.49 0-.807-.317-.807-.807V4.806c0-.49.317-.807.807-.807h1.594c.49 0 .807.317.807.807v1.594c0 .49-.317.807-.807.807zm-7.83 1.594c-1.297 0-2.448 1.151-2.448 2.448s1.151 2.448 2.448 2.448 2.448-1.151 2.448-2.448-1.151-2.448-2.448-2.448z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/valeriaocana" target="_blank" class="text-gray-600 hover:text-soft-pink transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-serif mb-4">Valeria Ocaña</h3>
+                <p class="text-gray-400 mb-6">Digital Marketing Strategist</p>
+                <p class="text-gray-500 text-sm">
+                    © 2024 Valeria Ocaña. All rights reserved. | Based in Lisbon, Portugal
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

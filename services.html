@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Valeria Ocaña | Digital Marketing Strategy & Coaching</title>
+    <meta name="description" content="Let's Grow Your Brand — With Strategy and Soul. Choose from 1:1 strategy sessions, content coaching, growth plans, or done-for-you content strategy.">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Services - Valeria Ocaña | Digital Marketing Strategy & Coaching">
+    <meta property="og:description" content="Let's Grow Your Brand — With Strategy and Soul. Choose from 1:1 strategy sessions, content coaching, growth plans, or done-for-you content strategy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeriaocana.com/services">
+    <meta property="og:image" content="https://valeriaocana.com/images/og-services.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['DM Serif Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'pastel-pink': '#F8E8E8',
+                        'pastel-mint': '#E8F5F0',
+                        'pastel-blue': '#E8F2FF',
+                        'pastel-beige': '#F5F1E8',
+                        'soft-pink': '#F4C2C2',
+                        'soft-mint': '#B8E6D1',
+                        'soft-blue': '#B8D4F0',
+                        'warm-beige': '#E8DCC0',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-pastel-pink/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-serif text-gray-800">Valeria Ocaña</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="about.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="professional-profile.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Profile</a>
+                        <a href="services.html" class="text-gray-900 px-3 py-2 text-sm font-medium border-b-2 border-soft-pink">Services</a>
+                        <a href="#contact" class="bg-soft-pink text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-pastel-pink/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">About</a>
+                <a href="professional-profile.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Profile</a>
+                <a href="services.html" class="text-gray-900 block px-3 py-2 text-base font-medium border-b-2 border-soft-pink">Services</a>
+                <a href="#contact" class="bg-soft-pink text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-pastel-pink via-pastel-beige to-pastel-mint relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-gray-800 mb-6 leading-tight">
+                    Let's Grow Your Brand —<br>
+                    <span class="text-soft-pink">With Strategy and Soul</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+                    Choose the path that aligns with your goals, timeline, and level of involvement. Every service is designed to create meaningful impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Service 1: 1:1 Strategy Sessions -->
+                <div id="strategy-sessions" class="bg-gradient-to-br from-pastel-pink to-pastel-beige rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-serif text-gray-800 mb-4">1:1 Strategy Sessions</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Deep-dive strategy sessions to clarify your brand direction, identify growth opportunities, and create actionable plans that align with your values and goals.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-soft-pink mr-2">•</span>
+                                90-minute intensive strategy session
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-pink mr-2">•</span>
+                                Brand positioning & messaging framework
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-pink mr-2">•</span>
+                                Custom growth roadmap with priorities
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-pink mr-2">•</span>
+                                Follow-up action plan & resources
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-gray-800">€497</span>
+                        <span class="text-gray-600 ml-2">per session</span>
+                    </div>
+                    
+                    <a href="https://calendly.com/valeriaocana/strategy-session" target="_blank" class="bg-soft-pink text-white px-6 py-3 rounded-full font-medium hover:bg-soft-pink/90 transition-all duration-300 inline-block">
+                        Book Strategy Session
+                    </a>
+                </div>
+
+                <!-- Service 2: Content & Brand Coaching -->
+                <div id="content-coaching" class="bg-gradient-to-br from-pastel-mint to-pastel-blue rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-soft-mint rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">✍️</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-serif text-gray-800 mb-4">Content & Brand Coaching</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Ongoing support to develop your authentic voice, create compelling content, and build genuine connections with your audience through consistent guidance and feedback.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-soft-mint mr-2">•</span>
+                                Monthly 60-minute coaching calls
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-mint mr-2">•</span>
+                                Content strategy & editorial planning
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-mint mr-2">•</span>
+                                Brand voice development & messaging
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-mint mr-2">•</span>
+                                Email support & quick feedback
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-gray-800">€1,297</span>
+                        <span class="text-gray-600 ml-2">per month</span>
+                    </div>
+                    
+                    <a href="https://calendly.com/valeriaocana/coaching-call" target="_blank" class="bg-soft-mint text-white px-6 py-3 rounded-full font-medium hover:bg-soft-mint/90 transition-all duration-300 inline-block">
+                        Start Coaching
+                    </a>
+                </div>
+
+                <!-- Service 3: Growth Plans -->
+                <div id="growth-plans" class="bg-gradient-to-br from-pastel-blue to-pastel-mint rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-soft-blue rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">📈</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-serif text-gray-800 mb-4">Growth Plans</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Comprehensive marketing strategies tailored to your business goals, target audience, and market position. Perfect for established businesses ready to scale.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-soft-blue mr-2">•</span>
+                                Complete market & competitor analysis
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-blue mr-2">•</span>
+                                Multi-channel marketing strategy
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-blue mr-2">•</span>
+                                Implementation timeline & milestones
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-soft-blue mr-2">•</span>
+                                30-day follow-up & optimization
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-gray-800">€2,497</span>
+                        <span class="text-gray-600 ml-2">one-time</span>
+                    </div>
+                    
+                    <a href="https://calendly.com/valeriaocana/growth-plan" target="_blank" class="bg-soft-blue text-white px-6 py-3 rounded-full font-medium hover:bg-soft-blue/90 transition-all duration-300 inline-block">
+                        Get Growth Plan
+                    </a>
+                </div>
+
+                <!-- Service 4: Done-for-You Strategy -->
+                <div id="done-for-you" class="bg-gradient-to-br from-pastel-beige to-pastel-pink rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-warm-beige rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-serif text-gray-800 mb-4">Done-for-You Strategy</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Complete content strategy and execution for busy entrepreneurs who want results without the work. I handle everything while you focus on your business.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-warm-beige mr-2">•</span>
+                                Complete content calendar & creation
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-warm-beige mr-2">•</span>
+                                Social media management & posting
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-warm-beige mr-2">•</span>
+                                Email marketing & automation
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-warm-beige mr-2">•</span>
+                                Monthly performance reports
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-gray-800">€3,997</span>
+                        <span class="text-gray-600 ml-2">per month</span>
+                    </div>
+                    
+                    <a href="https://calendly.com/valeriaocana/done-for-you" target="_blank" class="bg-warm-beige text-white px-6 py-3 rounded-full font-medium hover:bg-warm-beige/90 transition-all duration-300 inline-block">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-on Services -->
+    <section class="py-20 bg-gradient-to-br from-pastel-mint to-pastel-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    Add-on Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Enhance your main service with these specialized offerings
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Add-on 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="w-12 h-12 bg-soft-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-xl">📧</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Email Sequence Setup</h3>
+                    <p class="text-gray-600 text-sm mb-4">Automated email sequences for lead nurturing and customer onboarding</p>
+                    <span class="text-lg font-bold text-gray-800">€497</span>
+                </div>
+
+                <!-- Add-on 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="w-12 h-12 bg-soft-mint rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-xl">📱</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Social Media Audit</h3>
+                    <p class="text-gray-600 text-sm mb-4">Comprehensive analysis of your social media presence and optimization recommendations</p>
+                    <span class="text-lg font-bold text-gray-800">€297</span>
+                </div>
+
+                <!-- Add-on 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+                    <div class="w-12 h-12 bg-soft-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-xl">🎨</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Brand Voice Guide</h3>
+                    <p class="text-gray-600 text-sm mb-4">Detailed brand voice documentation and content style guidelines</p>
+                    <span class="text-lg font-bold text-gray-800">€397</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    How We Work Together
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A proven process that ensures clarity, alignment, and results
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Discovery</h3>
+                    <p class="text-gray-600 text-sm">We start with a deep dive into your goals, values, and current challenges</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-soft-mint rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Strategy</h3>
+                    <p class="text-gray-600 text-sm">I create a customized plan that aligns with your vision and resources</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-soft-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Implementation</h3>
+                    <p class="text-gray-600 text-sm">We execute the plan together, with ongoing support and adjustments</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-warm-beige rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Optimization</h3>
+                    <p class="text-gray-600 text-sm">Continuous monitoring and refinement to maximize results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-pastel-beige to-pastel-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                Not Sure Where to Start?
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Book a free discovery call to discuss your goals and find the perfect service for your needs.
+            </p>
+            
+            <a href="https://calendly.com/valeriaocana" target="_blank" class="bg-soft-pink text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink/90 transition-all duration-300 transform hover:scale-105 inline-block">
+                Book a Free Discovery Call
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-serif mb-4">Valeria Ocaña</h3>
+                <p class="text-gray-400 mb-6">Digital Marketing Strategist</p>
+                <p class="text-gray-500 text-sm">
+                    © 2024 Valeria Ocaña. All rights reserved. | Based in Lisbon, Portugal
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
