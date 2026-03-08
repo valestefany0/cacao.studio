@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Valeria Ocaña</title>
+  <meta name="description" content="Digital marketing strategist focused on helping founders, creators, and mission-led brands communicate with more clarity, relevance, and intention.">
+  <meta property="og:title" content="About | Valeria Ocaña">
+  <meta property="og:description" content="Digital marketing strategist focused on helping founders, creators, and mission-led brands communicate with more clarity, relevance, and intention.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://valeriaocana.com/about">
+  <meta property="og:image" content="https://valeriaocana.com/images/og-about.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: { cream: '#FBF8F3', cocoa: '#8B7355', charcoal: '#2C2825', accent: '#B85C38', gold: '#C9A227' },
+          maxWidth: { 'content': '1200px', 'prose': '720px' },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-cream text-charcoal antialiased">
+  <header>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-charcoal/5 transition-all duration-200">
+      <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-18">
+          <a href="index.html" class="text-xl md:text-2xl font-serif font-semibold text-charcoal">Valeria Ocaña</a>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-cocoa hover:text-charcoal transition-colors">Home</a>
+            <a href="work-with-me.html" class="text-cocoa hover:text-charcoal transition-colors">Work With Me</a>
+            <a href="results.html" class="text-cocoa hover:text-charcoal transition-colors">Results</a>
+            <a href="about.html" class="text-charcoal font-medium">About</a>
+            <a href="contact.html" class="text-cocoa hover:text-charcoal transition-colors">Contact</a>
+            <a href="https://calendly.com/valeriaocana" target="_blank" rel="noopener" class="btn-primary inline-block">Book a Discovery Call</a>
+          </div>
+          <button id="mobile-menu-button" type="button" class="md:hidden p-2 text-charcoal" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-charcoal/5 bg-white">
+        <div class="max-w-content mx-auto px-4 py-4 space-y-1">
+          <a href="index.html" class="block py-2 text-cocoa hover:text-charcoal">Home</a>
+          <a href="work-with-me.html" class="block py-2 text-cocoa hover:text-charcoal">Work With Me</a>
+          <a href="results.html" class="block py-2 text-cocoa hover:text-charcoal">Results</a>
+          <a href="about.html" class="block py-2 font-medium text-charcoal">About</a>
+          <a href="contact.html" class="block py-2 text-cocoa hover:text-charcoal">Contact</a>
+          <a href="https://calendly.com/valeriaocana" target="_blank" rel="noopener" class="btn-primary inline-block mt-2">Book a Discovery Call</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pt-24 md:pt-28 pb-12 md:pb-16 bg-cream">
+      <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-charcoal mb-10">About</h1>
+        <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div class="max-w-prose">
+            <p class="text-lg text-cocoa leading-relaxed mb-6">
+              I'm Valeria Ocaña, a digital marketing strategist focused on helping founders, creators, and mission-led brands communicate with more clarity, relevance, and intention.
+            </p>
+            <p class="text-cocoa leading-relaxed mb-6">
+              My work sits between strategy and storytelling. I care about what makes a brand grow, but also about what makes it trusted, memorable, and genuinely aligned.
+            </p>
+            <p class="text-cocoa leading-relaxed mb-6">
+              Over the years, I've worked across creator ecosystems, digital campaigns, and brand growth initiatives, supporting content strategy, messaging, audience development, and communication that connects both emotionally and commercially.
+            </p>
+            <p class="text-cocoa leading-relaxed mb-8">
+              I'm especially drawn to projects that have substance — businesses and people with something real to say, sell, or build — and that want to do it in a way that feels intelligent, human, and sustainable.
+            </p>
+            <div class="border-l-2 border-accent pl-6 py-2">
+              <p class="text-charcoal font-medium italic">What matters to me is not just helping brands be seen. It is helping them be understood.</p>
+            </div>
+            <p class="text-cocoa leading-relaxed mt-8">
+              Outside of metrics and strategy, I believe the strongest brands are built through clarity, consistency, and emotional truth. *
+            </p>
+          </div>
+          <div>
+            <img src="assets/AFB.jpg" alt="Valeria Ocaña" class="w-full max-w-md rounded-lg shadow-lg object-cover aspect-[3/4]"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-white py-14">
+    <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-8">
+        <div>
+          <p class="font-serif text-lg font-semibold">Valeria Ocaña / Cacao Studio</p>
+          <p class="text-white/70 mt-1 text-sm">Digital marketing strategy for purpose-driven founders, creators, and brands.</p>
+        </div>
+        <div class="flex flex-wrap gap-6 text-sm">
+          <a href="index.html" class="text-white/80 hover:text-white">Home</a>
+          <a href="work-with-me.html" class="text-white/80 hover:text-white">Work With Me</a>
+          <a href="results.html" class="text-white/80 hover:text-white">Results</a>
+          <a href="about.html" class="text-white/80 hover:text-white">About</a>
+          <a href="contact.html" class="text-white/80 hover:text-white">Contact</a>
+        </div>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-wrap gap-6 text-sm text-white/60">
+        <a href="https://instagram.com/valeriaocana" target="_blank" rel="noopener" class="hover:text-white">Instagram *</a>
+        <a href="https://linkedin.com/in/valeriaocana" target="_blank" rel="noopener" class="hover:text-white">LinkedIn *</a>
+        <a href="mailto:hello@valeriaocana.com" class="hover:text-white">Email *</a>
+      </div>
+      <p class="mt-6 text-sm text-white/50">© 2025 Cacao Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

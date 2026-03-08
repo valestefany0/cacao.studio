@@ -1,0 +1,136 @@
+/* Cacao Studio / Valeria Ocaña — Design system */
+
+/* Design tokens (replace *HEX when confirmed) */
+:root {
+  --color-cream: #FBF8F3;
+  --color-cocoa: #8B7355;
+  --color-charcoal: #2C2825;
+  --color-accent: #B85C38;
+  --color-gold: #C9A227;
+  --container-max: 1200px;
+  --text-max: 720px;
+  --section-padding-desk: 100px;
+  --section-padding-mobile: 60px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: var(--section-padding-desk);
+  padding-bottom: var(--section-padding-desk);
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: var(--section-padding-mobile);
+    padding-bottom: var(--section-padding-mobile);
+  }
+}
+
+/* Fade-in (subtle) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #9a4d2f;
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+/* Cards — premium, light shadow or border */
+.card-premium {
+  background: #fff;
+  border: 1px solid rgba(44, 40, 37, 0.08);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-premium:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(44, 40, 37, 0.12);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a4d2f;
+}
+
+/* Focus states (accessibility) */
+a:focus,
+button:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Print */
+@media print {
+  .btn-primary::before,
+  .btn-secondary::before {
+    display: none;
+  }
+}
+
+/* Nav: solid background when scrolled */
+nav.nav-scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .card-premium {
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
