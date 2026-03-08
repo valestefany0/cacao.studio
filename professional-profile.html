@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile - Valeria Ocaña | Marketing Strategy Expert</title>
+    <meta name="description" content="Marketing Strategy Rooted in Purpose and Performance. Explore Valeria's expertise in inbound marketing, content strategy, analytics, and YouTube ecosystems.">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Professional Profile - Valeria Ocaña | Marketing Strategy Expert">
+    <meta property="og:description" content="Marketing Strategy Rooted in Purpose and Performance. Explore Valeria's expertise in inbound marketing, content strategy, analytics, and YouTube ecosystems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valeriaocana.com/professional-profile">
+    <meta property="og:image" content="https://valeriaocana.com/images/og-profile.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['DM Serif Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'pastel-pink': '#F8E8E8',
+                        'pastel-mint': '#E8F5F0',
+                        'pastel-blue': '#E8F2FF',
+                        'pastel-beige': '#F5F1E8',
+                        'soft-pink': '#F4C2C2',
+                        'soft-mint': '#B8E6D1',
+                        'soft-blue': '#B8D4F0',
+                        'warm-beige': '#E8DCC0',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-pastel-pink/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-serif text-gray-800">Valeria Ocaña</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="about.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="professional-profile.html" class="text-gray-900 px-3 py-2 text-sm font-medium border-b-2 border-soft-pink">Profile</a>
+                        <a href="services.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#contact" class="bg-soft-pink text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-pastel-pink/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">About</a>
+                <a href="professional-profile.html" class="text-gray-900 block px-3 py-2 text-base font-medium border-b-2 border-soft-pink">Profile</a>
+                <a href="services.html" class="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
+                <a href="#contact" class="bg-soft-pink text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-soft-pink/90 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-pastel-blue via-pastel-beige to-pastel-mint relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-gray-800 mb-6 leading-tight">
+                    Marketing Strategy Rooted in<br>
+                    <span class="text-soft-blue">Purpose and Performance</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+                    Combining data-driven insights with human-centered storytelling to create marketing that truly resonates and delivers results.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio & Specialties Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                        Expertise & Specialties
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        With over 8 years of experience in digital marketing, I specialize in creating strategies that bridge the gap between data and human connection. My expertise spans across multiple channels and industries, always with a focus on sustainable, purpose-driven growth.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-soft-pink rounded-full mr-4"></div>
+                            <span class="text-gray-700">Inbound Marketing & Lead Generation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-soft-mint rounded-full mr-4"></div>
+                            <span class="text-gray-700">Content Strategy & Storytelling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-soft-blue rounded-full mr-4"></div>
+                            <span class="text-gray-700">Analytics & Performance Optimization</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-warm-beige rounded-full mr-4"></div>
+                            <span class="text-gray-700">YouTube Ecosystem Management</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-soft-pink rounded-full mr-4"></div>
+                            <span class="text-gray-700">Ethical Branding & Positioning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-pastel-mint to-pastel-blue rounded-3xl p-8 h-96 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-soft-mint rounded-full mx-auto mb-6 flex items-center justify-center">
+                                <span class="text-4xl">📊</span>
+                            </div>
+                            <p class="text-gray-600 italic">"Data tells a story, but purpose drives action"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Projects Section -->
+    <section class="py-20 bg-gradient-to-br from-pastel-mint to-pastel-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    Highlight Projects
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Key campaigns and initiatives that showcase strategic thinking and measurable impact
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-soft-pink rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎬</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Misfit Movie Launch</h3>
+                    <p class="text-gray-600 mb-4">LATAM digital strategy for independent film distribution, reaching 2M+ viewers across Spanish-speaking markets.</p>
+                    <div class="text-sm text-gray-500">
+                        <span class="font-semibold">Results:</span> 300% increase in ticket sales, 150% social media engagement growth
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-soft-mint rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">YouTube Female Voices</h3>
+                    <p class="text-gray-600 mb-4">Multi-regional campaign supporting women creators across 3 continents, fostering inclusive content creation.</p>
+                    <div class="text-sm text-gray-500">
+                        <span class="font-semibold">Results:</span> 500+ creators supported, 50M+ total views generated
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-soft-blue rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🛒</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-gray-800 mb-4">Gudyz Ecommerce Launch</h3>
+                    <p class="text-gray-600 mb-4">Complete digital strategy for sustainable fashion platform, from brand positioning to conversion optimization.</p>
+                    <div class="text-sm text-gray-500">
+                        <span class="font-semibold">Results:</span> 200% increase in online sales, 85% customer retention rate
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Snapshot Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    Skills Snapshot
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Technical expertise and strategic capabilities that drive results
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-soft-pink to-pastel-pink rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📧</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Email & LinkedIn Strategy</h3>
+                    <p class="text-gray-600 text-sm">Automated sequences, personal branding, and relationship building</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-soft-mint to-pastel-mint rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Community Building</h3>
+                    <p class="text-gray-600 text-sm">Engagement strategies, community management, and brand advocacy</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-soft-blue to-pastel-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">CRM & Analytics</h3>
+                    <p class="text-gray-600 text-sm">Data analysis, customer journey mapping, and performance optimization</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-warm-beige to-pastel-beige rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌐</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Global Project Management</h3>
+                    <p class="text-gray-600 text-sm">Cross-cultural campaigns, international coordination, and scalable processes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="py-20 bg-gradient-to-br from-pastel-beige to-pastel-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                    Professional Journey
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Key milestones in my career and the lessons learned along the way
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Experience 1 -->
+                    <div class="flex items-start">
+                        <div class="w-4 h-4 bg-soft-pink rounded-full mt-2 mr-6"></div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">YouTube Channel Management</h3>
+                            <p class="text-gray-600 mb-2">Managed 500+ creator channels across multiple verticals and languages</p>
+                            <p class="text-sm text-gray-500">Key Achievement: 40% average growth in subscriber base across managed channels</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="flex items-start">
+                        <div class="w-4 h-4 bg-soft-mint rounded-full mt-2 mr-6"></div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">International Campaign Development</h3>
+                            <p class="text-gray-600 mb-2">Led digital strategies for global brands across LATAM, Europe, and North America</p>
+                            <p class="text-sm text-gray-500">Key Achievement: $2M+ in attributed revenue across international campaigns</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="flex items-start">
+                        <div class="w-4 h-4 bg-soft-blue rounded-full mt-2 mr-6"></div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Conscious Brand Consulting</h3>
+                            <p class="text-gray-600 mb-2">Specialized in helping purpose-driven businesses align marketing with mission</p>
+                            <p class="text-sm text-gray-500">Key Achievement: 100% client retention rate and 85% referral rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">
+                Ready to Work Together?
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Let's discuss how my expertise can help you achieve your marketing goals with purpose and performance.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="services.html" class="bg-soft-pink text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink/90 transition-all duration-300 transform hover:scale-105">
+                    View Services
+                </a>
+                <a href="https://calendly.com/valeriaocana" target="_blank" class="border-2 border-soft-pink text-soft-pink px-8 py-4 rounded-full text-lg font-medium hover:bg-soft-pink hover:text-white transition-all duration-300">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-serif mb-4">Valeria Ocaña</h3>
+                <p class="text-gray-400 mb-6">Digital Marketing Strategist</p>
+                <p class="text-gray-500 text-sm">
+                    © 2024 Valeria Ocaña. All rights reserved. | Based in Lisbon, Portugal
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
