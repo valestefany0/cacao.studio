@@ -1,3 +1,7 @@
 {
-  "framework": null
+  "framework": null,
+  "redirects": [
+    { "source": "/services", "destination": "/work-with-me.html", "permanent": true },
+    { "source": "/services.html", "destination": "/work-with-me.html", "permanent": true }
+  ]
 }
